@@ -1,17 +1,22 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/*font references*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline; }
+    vertical-align: baseline; } */
   
   /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  /* article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
   
   body {
-    line-height: 1; }
+    line-height: 1;
+    padding: 0 0 50px; }
   
   ol, ul {
     list-style: none; }
@@ -21,8 +26,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
-    content: none; }
-  
+    content: none; } */
+
   table {
     border-collapse: collapse;
     border-spacing: 0; }
@@ -45,41 +50,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     cursor: pointer;
     padding: 0;
     margin: 0; }
-  
-  /* Fonts */
-  @font-face {
-    font-family: "BrandonGrotesqueWeb-Medium";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-medium.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-medium.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-medium.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-medium.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-medium.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "BrandonGrotesqueWeb-Black";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-black.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-black.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-black.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-black.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-grotesque-black.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "BrandonText-Regular";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-text-regular.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-text-regular.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-text-regular.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-text-regular.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-brandon-text-regular.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "alrightregular";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "PermanentMarker";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-PermanentMarker.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-PermanentMarker.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-PermanentMarker.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-PermanentMarker.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-PermanentMarker.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "alrightregular";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.woff2?9350') format("woff2"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-alright.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "SackersGothicStd-Heavy";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-sackers-gothic-heavy.eot?9350');
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-sackers-gothic-heavy.eot?%23iefix&9350') format("embedded-opentype"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-sackers-gothic-heavy.woff?9350') format("woff"), url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-sackers-gothic-heavy.ttf?9350') format("truetype"); }
-  @font-face {
-    font-family: "archer";
-    src: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/font-archer.otf?9350') format("opentype"); }
-  .mobile, .mobile-800 {
-    display: none; }
+    
+    
   
   *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -88,16 +60,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   
-  body {
-    padding: 0 0 50px; }
-  
   .wrap {
     position: relative;
     z-index: 1;
     width: 1160px;
     max-width: 100%;
-    margin: 0 auto; }
-  
+    margin: 0 auto; 
+  }
+
   .main {
     margin-top: 25px; }
   
@@ -134,29 +104,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   button {
     transition: background-color .15s,color .15s; }
   
-
+.printables .title h1 {
+      font: 16px/1em "Roboto", sans-serif;
+      color: #15476b;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 30px; }
 .printables .meta {
     border: 3px double #ebebeb;
     padding: 45px 159px;
     margin: 0 0 34px; }
     .printables .meta.active .step-1, .printables .meta.active .form, .printables .meta.active h3 {
       display: none; }
-    .printables .meta h1 {
-      font: 16px/1em "BrandonGrotesqueWeb-Black", sans-serif;
+    /* .printables .meta h1 {
+      font: 16px/1em "Roboto", sans-serif;
       color: #15476b;
       letter-spacing: .2em;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 0 30px; }
+      margin: 0 0 30px; } */
   .printables .step {
     text-align: center; }
     .printables .step h3 {
-      font: 16px/28px "BrandonGrotesqueWeb-Black", sans-serif;
+      font: 16px/28px "Roboto", sans-serif;
       color: #e90f75;
       letter-spacing: .2em;
       text-transform: uppercase; }
     .printables .step p {
-      font: 16px/28px "BrandonText-Regular", sans-serif;
+      font: 16px/28px "Roboto", sans-serif;
+      font: 'Avenir Next';
       color: #15476b; }
     .printables .step i {
       position: relative;
@@ -176,7 +153,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       justify-content: center;
       width: 168px;
       height: 40px;
-      font: 19px/1em "alrightregular", script;
+      font: 19px/1em "Roboto", script;
       color: #009da6; }
     .printables .form div {
       display: flex;
@@ -190,8 +167,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: block;
       width: calc(100% - 59px);
       height: 40px;
-      border-left: 1px solid #6ccac8;
-      font: 15px/40px "BrandonGrotesqueWeb-Medium", sans-serif;
+      /* border-left: 1px solid #6ccac8; */
+      font: 15px/40px "Roboto", sans-serif;
       color: #009da6;
       letter-spacing: .04em;
       padding: 0 4%; }
@@ -219,7 +196,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: inline-block;
       height: 35px;
       background-color: #15476b;
-      font: 13px/35px "BrandonGrotesqueWeb-Black", sans-serif;
+      font: 13px/35px "Roboto", sans-serif;
       color: #fff;
       letter-spacing: .2em;
       text-transform: uppercase;
@@ -245,7 +222,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 161px;
     height: 35px;
     background-color: #15476b;
-    font: 13px/35px "BrandonGrotesqueWeb-Black", sans-serif;
+    font: 13px/35px "Roboto", sans-serif;
     color: #fff;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -268,7 +245,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .printables-search input {
       width: calc(100% - 68px);
       height: 44px;
-      font: 15px/44px "BrandonGrotesqueWeb-Medium", sans-serif;
+      font: 15px/44px "Roboto", sans-serif;
       color: #15476b;
       letter-spacing: .04em;
       padding: 5px 25px 0;
@@ -279,12 +256,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       justify-content: center;
       width: 68px;
       height: 44px; }
-      .printables-search button span {
+      /* .printables-search button span {
         display: block;
         width: 19px;
         height: 19px;
         background: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/icons-super-header.png?9350') no-repeat left;
-        background-size: 85px 19px; }
+        background-size: 85px 19px; } */
   
   .printables-list {
     border-top: 9px solid #15476b; }
@@ -299,7 +276,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         fill: #15476b;
         stroke: #15476b; }
     .printables-list h3 {
-      font: 16px/1em "BrandonGrotesqueWeb-Black", sans-serif;
+      font: 16px/1em "Roboto", sans-serif;
       color: #15476b;
       letter-spacing: .2em;
       text-transform: uppercase;
@@ -345,7 +322,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       box-shadow: 0 0 9px 1px rgba(43, 43, 42, 0.1);
       transition: box-shadow .15s; }
     .printable .number {
-      font: 14px/1em "alrightregular", script;
+      font: 14px/1em "Roboto", script;
       color: #a2a9ad;
       margin: 0 0 15px; }
       .printable .number span {
@@ -353,7 +330,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         padding: 0 5px 5px;
         border-bottom: 1px solid #ced2d4; }
     .printable .title {
-      font: 15px/1em "BrandonGrotesqueWeb-Medium", sans-serif;
+      font: 15px/1em "Roboto", sans-serif;
       color: #15476b;
       letter-spacing: .04em;
       text-transform: capitalize; }
@@ -367,7 +344,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: none; }
     .printables .form .label {
       width: 25%;
-      font: 15px/1em "alrightregular", script;
+      font: 15px/1em "Roboto", script;
       text-align: center;
       padding: 0 11px; }
     .printables .form div {
@@ -376,7 +353,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       font-size: 18px; }
     .printables .tags a {
       height: 30px;
-      font: 11px/30px "BrandonGrotesqueWeb-Black", sans-serif;
+      font: 11px/30px "Roboto", sans-serif;
       padding: 2px 14px 0;
       margin: 0 4px 8px; }
   
@@ -397,4 +374,4 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .printable {
       width: 48%; }
       .printable .title {
-        font: 15px/1.5em "BrandonGrotesqueWeb-Medium", sans-serif; } }
+        font: 15px/1.5em "Roboto", sans-serif; } }

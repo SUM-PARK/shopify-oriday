@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-
+ 
         <!--**************************************************************************************************************************************************
         shopify ui config start
         **************************************************************************************************************************************************-->
@@ -28,28 +28,25 @@
     <body>
         <div class="main">
             <div class="printables wrap" id="printables">
-                <!--printables subscribe 시작-->
-                <div id="shopify-section-printables-1-meta" class="shopify-section">
-                    <div class="meta">
-                        <h1>Free printable library</h1>
-                        <div class="step step-1">
-                            <h3><i class="fa fa-unlock-alt" aria-hidden="true"></i> Step 1:</h3>
-                            <p>Sign up for our occasional newsletter.</p>
-                        </div>
-                        <div class="form printables-form">
-                            <p class="label">Email signup</p>
-                            <div>
-                                <input type="email" name="EMAIL" placeholder="your email address here">
-                                <button type="submit"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div> 
-                        <div class="step">
-                            <h3><i class="fa fa-print" aria-hidden="true"></i> Step 2:</h3>
-                            <p>Simply click the name of any printable to open the document in a new window or tab.<br>
-                                Then print or save from there! For personal use only.</p>
-                        </div> 
-                    </div> 
+                <div class="title">
+                    <h1>FREE DOWNLOAD LIBRARY</h1>
                 </div>
+                <!--printables subscribe 시작-->
+                <div class="meta">
+                    <div class="step step-1">
+                        <h3><i class="fas fa-envelope"></i> Step 1:</h3>
+                        <p>Sign up for our occasional newsletter.</p>
+                    </div>
+                    <div class="form printables-form">
+                        <input type="email" name="EMAIL" placeholder="your email address here">
+                        <button type="submit"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div> 
+                    <div class="step">
+                        <h3><i class="fas fa-download"></i> Step 2:</h3>
+                        <p>Simply click the name of any printable to open the document in a new window or tab.<br>
+                            Then print or save from there! For personal use only.</p>
+                    </div> 
+                </div> 
                 <!--printables grid sample 시작-->
                 <div class="printable printable-view-all printable-wellness search-gratitude-list">
                     <a 
@@ -80,7 +77,8 @@
         **************************************************************************************************************************************************-->
         
         <!--location: collection-template-printables.liquid -->
-        <link href="./assets/fontawesome.css" rel="stylesheet" type="text/css" media="all">
+        <!--source: fontawesome sum.park.development kit-->
+        <script src="https://kit.fontawesome.com/61d5e12739.js" crossorigin="anonymous"></script>
         
         <!--location: collection-template-printables.liquid  -->
         <link href="./assets/printables.css" rel="stylesheet" type="text/css" media="all">
