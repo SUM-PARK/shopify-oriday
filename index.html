@@ -12,7 +12,7 @@
         <!--
             0. collection 등록, collection.printables template을 사용하고 있어야함
             1. product 등록, (image 있어야함)
-            2. product를 'printable' product type 지정
+            2. product를 collection에 등록
             3. settings -- file upload로 downloadable file 올리고 cdn 주소 저장
             3. meta guru 
                 3-1 key : url
@@ -25,49 +25,11 @@
         shopify ui config end
         **************************************************************************************************************************************************-->
     </head>
+    <!--**************************************************************************************************************************************************
+        printable 구현부분.
+        **************************************************************************************************************************************************-->
     <body>
-        <div class="main">
-            <div class="printables wrap" id="printables">
-                <div class="title">
-                    <h1>FREE DOWNLOAD LIBRARY</h1>
-                </div>
-                <!--printables subscribe 시작-->
-                <div class="meta">
-                    <div class="step step-1">
-                        <h3><i class="fas fa-envelope"></i> Step 1:</h3>
-                        <p>Sign up for our occasional newsletter.</p>
-                    </div>
-                    <div class="form printables-form">
-                        <input type="email" name="EMAIL" placeholder="your email address here">
-                        <button type="submit"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
-                    </div> 
-                    <div class="step">
-                        <h3><i class="fas fa-download"></i> Step 2:</h3>
-                        <p>Simply click the name of any printable to open the document in a new window or tab.<br>
-                            Then print or save from there! For personal use only.</p>
-                    </div> 
-                </div> 
-                <!--printables grid sample 시작-->
-                <div class="printable printable-view-all printable-wellness search-gratitude-list">
-                    <a 
-                    href="https://cdn.shopify.com/s/files/1/0157/9972/files/EmilyLey_Printable_GratitudeJournal_aa208d7b-cf04-4bd8-8221-16867f0a62d7.pdf?8334"
-                    target="_blank" 
-                    class="logged-in">
-                        <img 
-                        src="//cdn.shopify.com/s/files/1/0157/9972/files/EmilyLey_Printable_GratitudeJournal_1024x1024_f60277a8-657c-4135-9f81-eb521b0b817b_216x212@2x.jpg?v=1553666526"
-                        alt="Gratitude List">
-                    </a>
-                    <a 
-                    href="//cdn.shopify.com/s/files/1/0157/9972/files/EmilyLey_Printable_GratitudeJournal_1024x1024_f60277a8-657c-4135-9f81-eb521b0b817b_800x.jpg?v=1553666526"
-                    class="logged-out" 
-                    data-lightbox="printable-38">
-                        <img
-                        src="//cdn.shopify.com/s/files/1/0157/9972/files/EmilyLey_Printable_GratitudeJournal_1024x1024_f60277a8-657c-4135-9f81-eb521b0b817b_216x212@2x.jpg?v=1553666526"
-                        alt="Gratitude List">
-                    </a>
-                    <p class="title">gratitude list</p>
-                </div> <!-- end .printable -->
-            </div> <!-- end .wrap -->
+        <div data-include="product-card-printable.liquid">
         </div>
     </body>
     
@@ -78,8 +40,9 @@
         
         <!--location: collection-template-printables.liquid -->
         <!--source: fontawesome sum.park.development kit-->
-        <script src="https://kit.fontawesome.com/61d5e12739.js" crossorigin="anonymous"></script>
-        
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <!-- <script src="https://kit.fontawesome.com/61d5e12739.js" crossorigin="anonymous"></script> -->
+
         <!--location: collection-template-printables.liquid  -->
         <link href="./assets/printables.css" rel="stylesheet" type="text/css" media="all">
         
@@ -92,6 +55,15 @@
         <!--location: collection-template-printables.liquid  -->
         <script src="./assets/printables.js" type="text/javascript"></script>
         
+        <script>
+            $(function(){
+                var includes = $('[data-include]');
+                jQuery.each(includes, function(){
+                var file = 'snippets/' + $(this).data('include') + '.html';
+                $(this).load(file);
+                });
+            });
+        </script>
         <!--**************************************************************************************************************************************************
         shopify assets end
         **************************************************************************************************************************************************-->
