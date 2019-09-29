@@ -1,6 +1,7 @@
 /*font references*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -105,16 +106,19 @@
     transition: background-color .15s,color .15s; }
   
 .printables .title h1 {
-      font: 16px/1em "Roboto", sans-serif;
-      color: #15476b;
+      font: 16px/1em "Lato", sans-serif;
+      color: #000000;
       letter-spacing: .2em;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 0 30px; }
+      margin: 0 0 60px;
+      margin-top: 50px; }
 .printables .meta {
-    border: 3px double #ebebeb;
-    padding: 45px 159px;
-    margin: 0 0 34px; }
+    background: #F9F3EA;
+    border: 0;
+    padding: 45px 120px;
+    margin: 0 0 45px;
+}
     .printables .meta.active .step-1, .printables .meta.active .form, .printables .meta.active h3 {
       display: none; }
     /* .printables .meta h1 {
@@ -124,37 +128,56 @@
       text-transform: uppercase;
       text-align: center;
       margin: 0 0 30px; } */
-  .printables .step {
+.printables .step {
     text-align: center; }
-    .printables .step h3 {
-      font: 16px/28px "Roboto", sans-serif;
-      color: #e90f75;
-      letter-spacing: .2em;
-      text-transform: uppercase; }
-    .printables .step p {
-      font: 16px/28px "Roboto", sans-serif;
-      font: 'Avenir Next';
-      color: #15476b; }
-    .printables .step i {
-      position: relative;
-      top: 1px;
-      font-size: 21px; }
-  .printables .form {
+hr {
+    width: 115%;
+    border: 1px solid #F4EBDC;
+    margin-left: -70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    }
+.printables .step h3 {
+  font: 16px "Lato", sans-serif;
+  font-weight: bold;
+  color: #E97961;
+  letter-spacing: .2em;
+  text-transform: uppercase; 
+  margin: 0 0 10px; }
+  
+.printables .step p {
+  font: 15px/28px "Lato", sans-serif;
+  font: 'Avenir Next';
+  color: #4D4D4D; }
+.printables .step i {
+  position: relative;
+  top: 1px;
+  font-size: 21px; }
+
+.printables .step-1 {
+   margin-bottom: 30px;
+}
+.printables .step-2 {
+   margin: 10px;
+}
+
+
+.printables .form {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 66px;
-    background-color: #e1f3f2;
+    background-color: #ffffff;
     margin: 15px 0 30px; }
     .printables .form .label {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 168px;
+      width: 68px;
       height: 40px;
-      font: 19px/1em "Roboto", script;
-      color: #009da6; }
+      font: 19px/1em "Lato", script;
+      color: #4D4D4D; }
     .printables .form div {
       display: flex;
       align-items: center;
@@ -168,12 +191,12 @@
       width: calc(100% - 59px);
       height: 40px;
       /* border-left: 1px solid #6ccac8; */
-      font: 15px/40px "Roboto", sans-serif;
-      color: #009da6;
+      font: 15px/40px "Lato", sans-serif;
+      color: #A28756;
       letter-spacing: .04em;
       padding: 0 4%; }
       .printables .form input[type=email]::placeholder {
-        color: #009da6;
+        color: #A28756;
         opacity: 1; }
     .printables .form button {
       display: flex;
@@ -181,11 +204,11 @@
       justify-content: center;
       width: 59px;
       height: 40px;
-      border-left: 1px solid #6ccac8;
+      border-left: 1px solid #A28756;
       font-size: 25px;
-      color: #009da6; }
+      color: #A28756; }
       .printables .form button:hover {
-        color: #15476b; }
+        color: rgb(85, 71, 45); }
   .printables .tags {
     display: flex;
     align-items: center;
@@ -195,17 +218,17 @@
     .printables .tags a {
       display: inline-block;
       height: 35px;
-      background-color: #15476b;
-      font: 13px/35px "Roboto", sans-serif;
+      background-color: rgb(85, 71, 45);
+      font: 13px/35px "Lato", sans-serif;
       color: #fff;
       letter-spacing: .2em;
       text-transform: uppercase;
       padding: 3px 18px 0;
       margin: 0 5px 10px; }
       .printables .tags a:nth-child(2) {
-        background-color: #009da6; }
+        background-color: #ffffff; }
       .printables .tags a:nth-child(3) {
-        background-color: #6ccac8; }
+        background-color: #ddee92; }
       .printables .tags a:nth-child(4) {
         background-color: #31b577; }
       .printables .tags a:nth-child(5) {
@@ -213,7 +236,7 @@
       .printables .tags a:nth-child(6) {
         background-color: #f5a4c7; }
       .printables .tags a:nth-child(7) {
-        background-color: #e90f75; }
+        background-color: #dd84ad; }
       .printables .tags a.view-all {
         background-color: #f4f4f4;
         color: #5d5d5d; }
@@ -221,8 +244,8 @@
     display: block;
     width: 161px;
     height: 35px;
-    background-color: #15476b;
-    font: 13px/35px "Roboto", sans-serif;
+    background-color: #4a6b15;
+    font: 13px/35px "Lato", sans-serif;
     color: #fff;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -245,7 +268,7 @@
     .printables-search input {
       width: calc(100% - 68px);
       height: 44px;
-      font: 15px/44px "Roboto", sans-serif;
+      font: 15px/44px "Lato", sans-serif;
       color: #15476b;
       letter-spacing: .04em;
       padding: 5px 25px 0;
@@ -276,7 +299,7 @@
         fill: #15476b;
         stroke: #15476b; }
     .printables-list h3 {
-      font: 16px/1em "Roboto", sans-serif;
+      font: 16px/1em "Lato", sans-serif;
       color: #15476b;
       letter-spacing: .2em;
       text-transform: uppercase;
@@ -290,7 +313,7 @@
   
   .printable {
     width: 23%;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     text-align: center;
     padding: 30px 27px 35px;
     margin: 0 7.5px 13px; }
@@ -319,10 +342,10 @@
       height: auto;
       max-width: 216px;
       max-height: 212px;
-      box-shadow: 0 0 9px 1px rgba(43, 43, 42, 0.1);
-      transition: box-shadow .15s; }
+      box-shadow: 0 0 1px 1px rgba(43, 43, 42, 0.1);
+      transition: box-shadow .1s; }
     .printable .number {
-      font: 14px/1em "Roboto", script;
+      font: 14px/1em "Lato", script;
       color: #a2a9ad;
       margin: 0 0 15px; }
       .printable .number span {
@@ -330,8 +353,8 @@
         padding: 0 5px 5px;
         border-bottom: 1px solid #ced2d4; }
     .printable .title {
-      font: 15px/1em "Roboto", sans-serif;
-      color: #15476b;
+      font: 15px/1em "Lato", sans-serif;
+      color: #000000;
       letter-spacing: .04em;
       text-transform: capitalize; }
   
@@ -344,7 +367,7 @@
       display: none; }
     .printables .form .label {
       width: 25%;
-      font: 15px/1em "Roboto", script;
+      font: 15px/1em "Lato", script;
       text-align: center;
       padding: 0 11px; }
     .printables .form div {
@@ -353,7 +376,7 @@
       font-size: 18px; }
     .printables .tags a {
       height: 30px;
-      font: 11px/30px "Roboto", sans-serif;
+      font: 11px/30px "Lato", sans-serif;
       padding: 2px 14px 0;
       margin: 0 4px 8px; }
   
@@ -374,4 +397,4 @@
     .printable {
       width: 48%; }
       .printable .title {
-        font: 15px/1.5em "Roboto", sans-serif; } }
+        font: 15px/1.5em "Lato", sans-serif; } }

@@ -1,6 +1,9 @@
 $(document).ready(function() {
     console.log('printables');
     printables();
+    if($('.printables-form button')) {
+        console.log('form button loaded', $('.printables-form button'));
+    }
 });
 // Printables cookie check
 function printables() {
