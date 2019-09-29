@@ -38,6 +38,17 @@
         중요! shopify와 1:1 대응해서 만들어야 관리가 쉽겠다
         **************************************************************************************************************************************************-->
         
+
+        <script>
+            $(function(){
+                var includes = $('[data-include]');
+                jQuery.each(includes, function(){
+                var file = 'snippets/' + $(this).data('include') + '.html';
+                $(this).load(file);
+                });
+            });
+        </script>
+        
         <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
         <!--source: fontawesome sum.park.development kit-->
         <!--location: collection-template-printables.liquid -->
@@ -55,15 +66,6 @@
         <!--location: collection-template-printables.liquid  -->
         <script src="./assets/printables.js" type="text/javascript"></script>
         
-        <script>
-            $(function(){
-                var includes = $('[data-include]');
-                jQuery.each(includes, function(){
-                var file = 'snippets/' + $(this).data('include') + '.html';
-                $(this).load(file);
-                });
-            });
-        </script>
         <!--**************************************************************************************************************************************************
         shopify assets end
         **************************************************************************************************************************************************-->
