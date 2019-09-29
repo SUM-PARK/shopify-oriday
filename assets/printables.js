@@ -1,9 +1,6 @@
 $(document).ready(function() {
     console.log('printables');
     printables();
-    if($('.printables-form button')) {
-        console.log('form button loaded', $('.printables-form button'));
-    }
 });
 // Printables cookie check
 function printables() {
@@ -19,11 +16,11 @@ function printables() {
         }
     }
 }
-// Newsletter subscription
-$('.printables-form button').click(function () {
+$(document).on('click', '.printables-form button', function(){
     console.log('subscribe button');
     printablesNewsletter();
-});
+})
+
 function printablesNewsletter() {
     var email = $('.printables-form input').val();
     if(!email) {
