@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
- 
+
         <!--**************************************************************************************************************************************************
         shopify ui config start
         **************************************************************************************************************************************************-->
         <!--
-            0. collection 등록, collection.printables template을 사용하고 있어야함
+            0. collection 등록, collection.downloadable template을 사용하고 있어야함
             1. product 등록, (image 있어야함)
             2. product를 collection에 등록
             3. settings -- file upload로 downloadable file 올리고 cdn 주소 저장
-            3. meta guru 
+            3. meta guru
                 3-1 key : url
-                    namespace: printable
+                    namespace: downloadable
                     value type: string
                 3-2 우측 view source code 눌러야됨.
                     cdn 주소 세팅 후 저장
@@ -26,18 +26,18 @@
         **************************************************************************************************************************************************-->
     </head>
     <!--**************************************************************************************************************************************************
-        printable 구현부분.
+        downloadable 구현부분.
         **************************************************************************************************************************************************-->
     <body>
-        <div data-include="product-card-printable.liquid">
+        <div data-include="product-card-downloadable.liquid">
         </div>
     </body>
-    
+
         <!--**************************************************************************************************************************************************
         shopify assets start
         중요! shopify와 1:1 대응해서 만들어야 관리가 쉽겠다
         **************************************************************************************************************************************************-->
-        
+
 
         <script>
             $(function(){
@@ -48,24 +48,24 @@
                 });
             });
         </script>
-        
+
         <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
         <!--source: fontawesome sum.park.development kit-->
-        <!--location: collection-template-printables.liquid -->
+        <!--location: collection-template-downloadable.liquid -->
         <script src="https://kit.fontawesome.com/61d5e12739.js" crossorigin="anonymous"></script>
 
-        <!--location: collection-template-printables.liquid  -->
-        <link href="./assets/printables.css" rel="stylesheet" type="text/css" media="all">
-        
-        <!--location: collection-template-printables.liquid  -->
+        <!--location: collection-template-downloadable.liquid  -->
+        <link href="./assets/downloadable.css" rel="stylesheet" type="text/css" media="all">
+
+        <!--location: collection-template-downloadable.liquid  -->
         <link href="./assets/lightbox.css" rel="stylesheet" type="text/css" media="all" />
-        
-        <!--location: collection-template-printables.liquid  -->
+
+        <!--location: collection-template-downloadable.liquid  -->
         <script src="./assets/lightbox.js" type="text/javascript"></script>
-        
-        <!--location: collection-template-printables.liquid  -->
-        <script src="./assets/printables.js" type="text/javascript"></script>
-        
+
+        <!--location: collection-template-downloadable.liquid  -->
+        <script src="./assets/downlodable.js" type="text/javascript"></script>
+
         <!--**************************************************************************************************************************************************
         shopify assets end
         **************************************************************************************************************************************************-->
@@ -75,28 +75,28 @@
         liquid를 여기서 랜더링 해 확인이 안되므로 template을 어떻게 구성했는지만 적어놓는다
         **************************************************************************************************************************************************-->
         <!--
-            1. printable collection
-            
-            (1) (new)collection.printables.liquid
-            desc: 
-            - ref "collection.printables.template.liquid"
-            - connect with shopify collection 'printables'
+            1. downloadable collection
 
-            (2) (new)collection-template-printables.liquid
-            desc: 
+            (1) (new)collection.downloadable.liquid
+            desc:
+            - ref "collection.downloadable.template.liquid"
+            - connect with shopify collection 'downloadable'
+
+            (2) (new)collection-template-downloadable.liquid
+            desc:
             - email subscribe function
-            - structure of printables as collection
-            - ref "product-card-printable.liquid"
+            - structure of downloadable as collection
+            - ref "product-card-downloadable.liquid"
         -->
         <!--
-            2. printable product
+            2. downloadable product
 
-            (1) product-card-printable.liquid
+            (1) product-card-downloadable.liquid
             desc:
             - connect metafield(url) with each product image.
             - switch between downloadables and images by whether user subscribed or not
         -->
-        
+
         <!--**************************************************************************************************************************************************
         shopify assets end
         **************************************************************************************************************************************************-->

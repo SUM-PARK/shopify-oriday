@@ -1,28 +1,34 @@
 $(document).ready(function() {
-    console.log('printables');
-    printables();
+    console.log('downloadables');
+    setTimeout(() => downloadables(),1);
 });
-// Printables cookie check
-function printables() {
+// Downloadables cookie check
+function downloadables() {
     var cookies = document.cookie.split(';');
     var check = false;
+
     for (i = 0; i < cookies.length; i++) {
         if (check == false) {
             if (cookies[i].indexOf('oridaySignedUp') > -1) {
                 check = true;
-                $('.printables .meta').addClass('active');
-                $('.printable').addClass('active');
             }
         }
     }
+
+    if(check) {
+        // Set downloadables link to downloadable
+        $('.login-control').removeClass('inactive').addClass('active');
+    } else {
+        $('.login-control').removeClass('active').addClass('inactive');
+    }
 }
-$(document).on('click', '.printables-form button', function(){
+$(document).on('click', '.downloadable-page-form button', function(){
     console.log('subscribe button');
-    printablesNewsletter();
+    downloadablesNewsletter();
 })
 
-function printablesNewsletter() {
-    var email = $('.printables-form input').val();
+function downloadablesNewsletter() {
+    var email = $('.downloadable-page-form input').val();
     if(!email) {
         return;
     }
@@ -35,15 +41,15 @@ function printablesNewsletter() {
         success: function (res) {
             console.log(res);
 
-            // Set printables newsletter signup cookie
+            // Set downloadables newsletter signup cookie
             var d = new Date();
             d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 year
             var expires = "expires=" + d.toGMTString();
             document.cookie = "oridaySignedUp=enabled; " + expires;
 
-            // Set printables link to downloadable
-            $('.printables .meta').addClass('active');
-            $('.printable').addClass('active');
+            // Set downloadables link to downloadable
+            $('.login-control').addClass('active');
+            $('.login-control').removeClass('inactive');
 
             console.log('subscribed');
         },

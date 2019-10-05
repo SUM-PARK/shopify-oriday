@@ -3,110 +3,46 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
- html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; } 
-  
-  /* HTML5 display-role reset for older browsers */
-   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block; }
-  
-  body {
-    line-height: 1;
-    padding: 0 0 50px; }
-  
-  ol, ul {
-    list-style: none; }
-  
-  blockquote, q {
-    quotes: none; }
-  
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none; } 
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-  
-  a, a img, input, textarea, button, select, option {
+a, a img, input, textarea, button, select, option {
     background: transparent;
     border: 0;
     padding: 0;
     margin: 0;
     outline: none;
     text-decoration: none; }
-  
-  .clear {
-    width: 100%;
-    height: 0;
-    clear: both;
-    display: block; }
-  
-  button {
+
+button {
     cursor: pointer;
     padding: 0;
     margin: 0; }
-    
-    
-  
-  *, *:after, *:before {
+
+*, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  
-  .wrap {
+
+.wrap {
     position: relative;
     z-index: 1;
     width: 1160px;
     max-width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
-  .main {
+.main {
     margin-top: 25px; }
-  
-  .trademark {
-    position: relative;
-    top: -6px;
-    font-size: 75%;
-    font-style: normal; }
-  
-  img {
-    max-width: 100%;
-    height: auto; }
-  
-  .embed-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden; }
-    .embed-container iframe, .embed-container object, .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  
-  .hidden {
-    position: absolute;
-    left: -10000; }
-    .hidden img {
-      width: 1px;
-      height: 1px; }
-  
-  button {
-    transition: background-color .15s,color .15s; }
-  
- 
-.printables .title h1 {
+
+.login-control.inactive .logged-out,
+.login-control.active .logged-in {
+    display: block }
+
+.login-control.active .logged-out,
+.login-control.inactive .logged-in {
+    display: none; }
+
+.downloadable-page .title h1 {
       font: 16px/1em "Lato", sans-serif;
       color: #000000;
       letter-spacing: .2em;
@@ -114,56 +50,47 @@
       text-align: center;
       margin: 0 0 60px;
       margin-top: 50px; }
-.printables .meta {
+.downloadable-page .subscription {
     background: #F9F3EA;
     border: 0;
     padding: 45px 120px;
     margin: 0 0 45px;
 }
-.printables .meta.active .step-1, .printables .meta.active .form, .printables .meta.active h3 {
-      display: none; }
-    /* .printables .meta h1 {
-      font: 16px/1em "Roboto", sans-serif;
-      color: #15476b;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      text-align: center;
-      margin: 0 0 30px; } */
-.printables .step {
+
+
+.downloadable-page .step {
     text-align: center; }
-hr {
+.downloadable-page .step hr {
     width: 115%;
     border: 1px solid #F4EBDC;
     margin-left: -70px;
     margin-top: 40px;
-    margin-bottom: 30px;
-    }
-.printables .step h3 {
+    margin-bottom: 30px; }
+.downloadable-page .step h3 {
   font: 16px "Lato", sans-serif;
   font-weight: bold;
   color: #E97961;
   letter-spacing: .2em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   margin: 0 0 10px; }
-  
-.printables .step p {
+
+.downloadable-page .step p {
   font: 15px/28px "Lato", sans-serif;
   font: 'Avenir Next';
   color: #4D4D4D; }
-.printables .step i {
+.downloadable-page .step i {
   position: relative;
   top: 1px;
   font-size: 21px; }
 
-.printables .step-1 {
+.downloadable-page .step-1 {
    margin-bottom: 30px;
 }
-.printables .step-2 {
+.downloadable-page .step-2 {
    margin: 10px;
 }
 
-
-.printables .form {
+.downloadable-page .form {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,7 +98,7 @@ hr {
     height: 66px;
     background-color: #ffffff;
     margin: 15px 0 30px; }
-    .printables .form .label {
+    .downloadable-page .form .label {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -179,13 +106,13 @@ hr {
       height: 40px;
       font: 19px/1em "Lato", script;
       color: #4D4D4D; }
-    .printables .form div {
+    .downloadable-page .form div {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: calc(100% - 168px);
       height: 40px; }
-    .printables .form input[type=email] {
+    .downloadable-page .form input[type=email] {
       position: relative;
       top: 3px;
       display: block;
@@ -196,10 +123,10 @@ hr {
       color: #A28756;
       letter-spacing: .04em;
       padding: 0 4%; }
-      .printables .form input[type=email]::placeholder {
+      .downloadable-page .form input[type=email]::placeholder {
         color: #A28756;
         opacity: 1; }
-    .printables .form button {
+    .downloadable-page .form button {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -208,15 +135,15 @@ hr {
       border-left: 1px solid #A28756;
       font-size: 25px;
       color: #A28756; }
-      .printables .form button:hover {
+      .downloadable-page .form button:hover {
         color: rgb(85, 71, 45); }
-  .printables .tags {
+  .downloadable-page .tags {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 0 26px; }
-    .printables .tags a {
+    .downloadable-page .tags a {
       display: inline-block;
       height: 35px;
       background-color: rgb(85, 71, 45);
@@ -226,22 +153,22 @@ hr {
       text-transform: uppercase;
       padding: 3px 18px 0;
       margin: 0 5px 10px; }
-      .printables .tags a:nth-child(2) {
+      .downloadable-page .tags a:nth-child(2) {
         background-color: #ffffff; }
-      .printables .tags a:nth-child(3) {
+      .downloadable-page .tags a:nth-child(3) {
         background-color: #ddee92; }
-      .printables .tags a:nth-child(4) {
+      .downloadable-page .tags a:nth-child(4) {
         background-color: #31b577; }
-      .printables .tags a:nth-child(5) {
+      .downloadable-page .tags a:nth-child(5) {
         background-color: #fdd23e; }
-      .printables .tags a:nth-child(6) {
+      .downloadable-page .tags a:nth-child(6) {
         background-color: #f5a4c7; }
-      .printables .tags a:nth-child(7) {
+      .downloadable-page .tags a:nth-child(7) {
         background-color: #dd84ad; }
-      .printables .tags a.view-all {
+      .downloadable-page .tags a.view-all {
         background-color: #f4f4f4;
         color: #5d5d5d; }
-  .printables .back-to-top {
+  .downloadable-page .back-to-top {
     display: block;
     width: 161px;
     height: 35px;
@@ -254,10 +181,10 @@ hr {
     padding: 3px 0 0;
     margin: 0 auto;
     transform: translateY(48px); }
-    .printables .back-to-top i {
+    .downloadable-page .back-to-top i {
       font-size: 16px; }
-  
-  .printables-search {
+
+  .downloadable-page-search {
     display: flex;
     align-items: center;
     width: 444px;
@@ -266,7 +193,7 @@ hr {
     border: 1px solid #ebebeb;
     padding: 11px 0;
     margin: 0 auto 36px; }
-    .printables-search input {
+    .downloadable-page-search input {
       width: calc(100% - 68px);
       height: 44px;
       font: 15px/44px "Lato", sans-serif;
@@ -274,130 +201,108 @@ hr {
       letter-spacing: .04em;
       padding: 5px 25px 0;
       border-right: 1px solid #ebebeb; }
-    .printables-search button {
+    .downloadable-page-search button {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 68px;
       height: 44px; }
-      /* .printables-search button span {
+      /* .downloadable-page-search button span {
         display: block;
         width: 19px;
         height: 19px;
         background: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/icons-super-header.png?9350') no-repeat left;
         background-size: 85px 19px; } */
-  
-  .printables-list {
+
+  .downloadable-category {
     border-top: 9px solid #15476b; }
-    .printables-list .ribbon {
+    .downloadable-category .ribbon {
       display: flex;
       justify-content: flex-end;
       padding-right: 35px;
       transform: translateY(-1px); }
-      .printables-list .ribbon svg {
+      .downloadable-category .ribbon svg {
         position: absolute; }
-      .printables-list .ribbon path {
+      .downloadable-category .ribbon path {
         fill: #15476b;
         stroke: #15476b; }
-    .printables-list h3 {
+    .downloadable-category h3 {
       font: 16px/1em "Lato", sans-serif;
       color: #15476b;
       letter-spacing: .2em;
       text-transform: uppercase;
       text-align: center;
       margin: 30px 0; }
-    .printables-list .grid {
+    .downloadable-category .grid {
       display: flex;
       align-items: stretch;
       justify-content: center;
       flex-wrap: wrap; }
-  
-  .printable {
+
+  .downloadable {
     width: 23%;
     background-color: #ffffff;
     text-align: center;
     padding: 30px 27px 35px;
     margin: 0 7.5px 13px; }
-    .printable .logged-in {
-      display: none; }
-    .printable.active .logged-out {
-      display: none; }
-    .printable.active .logged-in {
-      display: flex; }
-    .printable.printable-blank {
+    .downloadable.downloadable-blank {
       height: 0;
       padding: 0;
       margin: 0 7.5px; }
-    .printable a {
+    .downloadable a {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       height: 212px;
       margin: 0 0 50px; }
-      .printable a:hover img {
+      .downloadable a:hover img {
       -ms-transform: scale(1.1); /* IE 9 */
       -webkit-transform: scale(1.1); /* Safari 3-8 */
-      transform: scale(1.1); 
+      transform: scale(1.1);
       }
-    .printable img {
+    .downloadable img {
       display: block;
       width: auto;
       height: auto;
       max-width: 260px;
       max-height: 260px;
        }
-    .printable .number {
+    .downloadable .number {
       font: 14px/1em "Lato", script;
       color: #a2a9ad;
       margin: 0 0 15px; }
-      .printable .number span {
+      .downloadable .number span {
         display: inline-block;
         padding: 0 5px 5px;
         border-bottom: 1px solid #ced2d4; }
-    .printable .title {
+    .downloadable .title {
       font: 15px/1em "Lato", sans-serif;
       color: #000000;
       letter-spacing: .04em;
       text-transform: capitalize; }
-  
-  @media screen and (max-width: 1200px) {
-    .printables .meta {
+
+/* screen specific */
+@media screen and (max-width: 1200px) {
+    .downloadable-page .subscription {
       border: 0;
       padding: 45px 0 0;
       margin: 0 0 45px; }
-    .printables .step br {
+    .downloadable-page .step br {
       display: none; }
-    .printables .form .label {
-      width: 25%;
-      font: 15px/1em "Lato", script;
-      text-align: center;
-      padding: 0 11px; }
-    .printables .form div {
+    .downloadable-page .form div {
       width: 75%; }
-    .printables .form button {
+    .downloadable-page .form button {
       font-size: 18px; }
-    .printables .tags a {
-      height: 30px;
-      font: 11px/30px "Lato", sans-serif;
-      padding: 2px 14px 0;
-      margin: 0 4px 8px; }
-  
-    .printables-list .grid {
-      justify-content: space-between; }
-  
-    .printable {
+
+    .downloadable {
       width: 32%;
       padding: 30px 5%;
       margin: 0 0 13px; }
-      .printable a {
+      .downloadable a {
         width: 100%;
         height: auto;
         margin: 0 0 35px; }
-      .printable img {
-        max-width: 100%; } }
-  @media screen and (max-width: 600px) {
-    .printable {
-      width: 48%; }
-      .printable .title {
-        font: 15px/1.5em "Lato", sans-serif; } }
+      .downloadable img {
+        max-width: 100%; }
+}
