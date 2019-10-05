@@ -42,6 +42,9 @@ button {
 .login-control.inactive .logged-in {
     display: none; }
 
+.downloadable-page {
+    font: 15px/40px "Lato", sans-serif;
+}
 .downloadable-page .title h1 {
       font: 16px/1em "Lato", sans-serif;
       color: #000000;
@@ -119,7 +122,7 @@ button {
       width: calc(100% - 59px);
       height: 40px;
       /* border-left: 1px solid #6ccac8; */
-      font: 15px/40px "Lato", sans-serif;
+
       color: #A28756;
       letter-spacing: .04em;
       padding: 0 4%; }
@@ -214,6 +217,12 @@ button {
         background: url('//cdn.shopify.com/s/files/1/0157/9972/t/18/assets/icons-super-header.png?9350') no-repeat left;
         background-size: 85px 19px; } */
 
+.downloadable-list .grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap; }
+
   .downloadable-category {
     border-top: 9px solid #15476b; }
     .downloadable-category .ribbon {
@@ -253,8 +262,6 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      height: 212px;
       margin: 0 0 50px; }
       .downloadable a:hover img {
       -ms-transform: scale(1.1); /* IE 9 */
@@ -277,10 +284,10 @@ button {
         padding: 0 5px 5px;
         border-bottom: 1px solid #ced2d4; }
     .downloadable .title {
-      font: 15px/1em "Lato", sans-serif;
-      color: #000000;
-      letter-spacing: .04em;
-      text-transform: capitalize; }
+        margin-top: 60px;
+        color: #000000;
+        letter-spacing: .04em;
+        text-transform: capitalize; }
 
 
 /* screen specific */
@@ -301,6 +308,9 @@ button {
         margin-right: 0px; }
     /* .downloadable-page .step br {
       display: none; } */
+    .downloadable {
+        width: 35%;
+    }
 }
 @media screen and (max-width: 500px) {
     .downloadable-page .subscription {
@@ -311,6 +321,9 @@ button {
         margin-right: 5%; }
     /* .downloadable-page .step br {
       display: none; } */
+    .downloadable {
+        width: 45%;
+    }
 }
 @media screen and (max-width: 350px) {
     .downloadable-page .subscription {
@@ -321,4 +334,7 @@ button {
         margin-right: 5%; }
     /* .downloadable-page .step br {
       display: none; } */
+    .downloadable {
+        width: 55%;
+    }
 }
