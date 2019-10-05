@@ -105,6 +105,7 @@
   button {
     transition: background-color .15s,color .15s; }
   
+ 
 .printables .title h1 {
       font: 16px/1em "Lato", sans-serif;
       color: #000000;
@@ -119,7 +120,7 @@
     padding: 45px 120px;
     margin: 0 0 45px;
 }
-    .printables .meta.active .step-1, .printables .meta.active .form, .printables .meta.active h3 {
+.printables .meta.active .step-1, .printables .meta.active .form, .printables .meta.active h3 {
       display: none; }
     /* .printables .meta h1 {
       font: 16px/1em "Roboto", sans-serif;
@@ -333,17 +334,19 @@ hr {
       justify-content: center;
       width: 100%;
       height: 212px;
-      margin: 0 0 35px; }
+      margin: 0 0 50px; }
       .printable a:hover img {
-        box-shadow: 0 0 9px 1px rgba(43, 43, 43, 0.2); }
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
+      }
     .printable img {
       display: block;
       width: auto;
       height: auto;
-      max-width: 216px;
-      max-height: 212px;
-      box-shadow: 0 0 1px 1px rgba(43, 43, 42, 0.1);
-      transition: box-shadow .1s; }
+      max-width: 260px;
+      max-height: 260px;
+       }
     .printable .number {
       font: 14px/1em "Lato", script;
       color: #a2a9ad;
