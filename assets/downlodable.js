@@ -22,13 +22,13 @@ function downloadables() {
         $('.login-control').removeClass('active').addClass('inactive');
     }
 }
-$(document).on('click', '.downloadable-page-form button', function(){
+$(document).on('click', '.downloadable-page .form button', function(){
     console.log('subscribe button');
     downloadablesNewsletter();
 })
 
 function downloadablesNewsletter() {
-    var email = $('.downloadable-page-form input').val();
+    var email = $('.downloadable-page .form input').val();
     if(!email) {
         return;
     }
